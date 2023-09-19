@@ -1,0 +1,7 @@
+<div class="todo-app">
+  <app-task-input (addTask)="addTask($event)"></app-task-input>
+  <app-task-list
+    [tasks]="tasks"
+    (deleteTask)="deleteTask($event)"
+  ></app-task-list>
+</div>

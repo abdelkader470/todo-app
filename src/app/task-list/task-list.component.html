@@ -1,0 +1,6 @@
+<ul class="task-list">
+  <li *ngFor="let task of tasks" [ngClass]="{ completed: task.completed }">
+    <span (click)="onDeleteTask(task.id)">{{ task.text }}</span>
+    <button (click)="onDeleteTask(task.id)">Delete</button>
+  </li>
+</ul>
